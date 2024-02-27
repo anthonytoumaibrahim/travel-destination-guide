@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- Common Styles -->
     <link rel="stylesheet" href="./styles/common/base.css" />
     <link rel="stylesheet" href="./styles/common/colors.css" />
@@ -57,21 +62,37 @@
       <h1 class="text-center margin-bottom">Popular Destinations</h1>
       <section class="destinations">
         <div class="destination-card">
-          <img src="./images/destinations/larnaca.jpg" alt="Larnaca, Cyprus" />
-          <h2 class="title">Larnaca<span>Cyprus</span></h2>
+          <img src="./images/destinations/dubai.jpg" alt="Dubai, UAE" />
+          <div class="destination-card-content">
+            <h2>Dubai<span>UAE</span></h2>
+            <button class="card-button">
+              Discover Dubai<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
 
-        <div class="destination-card">
-          <img src="./images/destinations/dubai.jpg" alt="Dubai, UAE" />
-          <h2 class="title">Dubai<span>UAE</span></h2>
-        </div>
+        <a href="./pages/cyprus.html" class="destination-card destination-card-popular">
+          <img src="./images/destinations/larnaca.jpg" alt="Larnaca, Cyprus" />
+          <span class="popular-ribbon">Most Popular</span>
+          <div class="destination-card-content">
+            <h2>Larnaca<span>Cyprus</span></h2>
+            <button class="card-button">
+              Discover Cyprus<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </a>
 
         <div class="destination-card">
           <img
             src="./images/destinations/istanbul.jpg"
             alt="Istanbul, Türkiye"
           />
-          <h2 class="title">Istanbul<span>Türkiye</span></h2>
+          <div class="destination-card-content">
+            <h2>Istanbul<span>Türkiye</span></h2>
+            <button class="card-button">
+              Discover Türkiye<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </section>
     </section>
