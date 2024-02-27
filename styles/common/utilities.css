@@ -1,0 +1,32 @@
+.container {
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 20px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+.font-bold {
+  font-weight: bold;
+}
+.margin-bottom {
+  margin-bottom: var(--margin);
+}
+.margin-bottom-sm {
+  margin-bottom: var(--margin-sm);
+}
+.margin-bottom-lg {
+  margin-bottom: var(--margin-lg);
+}
+.shadow {
+  box-shadow: 0 0 25px 0 var(--shadow-color);
+}

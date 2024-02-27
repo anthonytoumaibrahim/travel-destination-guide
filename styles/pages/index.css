@@ -1,0 +1,43 @@
+.hero {
+  width: 100%;
+  height: 683px;
+  background-color: var(--primary-color);
+  background-image: url("../../images/hero-bg.webp?v=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow-x: clip;
+}
+.hero h1 {
+  color: #ffffff;
+  font-size: 64px;
+  text-shadow: 0 6px 12px var(--shadow-heavy-color);
+}
+.hero .divider {
+  fill: #ffffff;
+  rotate: 180deg;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 125%;
+  height: 110px;
+}
+
+.destinations {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.destination-card {
+  width: 360px;
+  border-radius: var(--radius-sm);
+  overflow: clip;
+}
+.destination-card img {
+  width: 360px;
+  height: 240px;
+  aspect-ratio: auto;
+  object-fit: cover;
+}

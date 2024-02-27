@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Destination Guide</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="./styles/common/base.css" />
+    <link rel="stylesheet" href="./styles/common/colors.css" />
+    <link rel="stylesheet" href="./styles/common/utilities.css" />
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="./styles/pages/index.css" />
+  </head>
+  <body>
+    <header class="site-header container">
+      <h2>Travel Destination Guide</h2>
+      <nav class="site-nav">
+        <ul>
+          <li>
+            <a href="./index.html" class="active">Home</a>
+          </li>
+          <li><a href="./index.html">User Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <!-- Hero -->
+      <div class="hero margin-bottom-lg">
+        <div>
+          <h1>Plan your next vacation</h1>
+        </div>
+
+        <!-- Divider -->
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          class="divider"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Destinations -->
+      <h1 class="text-center margin-bottom">Popular Destinations</h1>
+      <section class="destinations">
+        <div class="destination-card">
+          <img src="./images/destinations/larnaca.jpg" alt="Larnaca, Cyprus" />
+          <h2 class="title">Larnaca<span>Cyprus</span></h2>
+        </div>
+
+        <div class="destination-card">
+          <img src="./images/destinations/dubai.jpg" alt="Dubai, UAE" />
+          <h2 class="title">Dubai<span>UAE</span></h2>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="./images/destinations/istanbul.jpg"
+            alt="Istanbul, Türkiye"
+          />
+          <h2 class="title">Istanbul<span>Türkiye</span></h2>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
