@@ -32,3 +32,6 @@
 .shadow {
   box-shadow: 0 0 25px 0 var(--shadow-color);
 }
+.rounded-bottom {
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}

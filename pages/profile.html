@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Travel Destination Guide</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="../styles/common/base.css" />
+    <link rel="stylesheet" href="../styles/common/colors.css" />
+    <link rel="stylesheet" href="../styles/common/utilities.css" />
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="../styles/pages/profile.css" />
+  </head>
+  <body>
+    <header class="site-header container rounded-bottom margin-bottom">
+      <h2>Travel Destination Guide</h2>
+      <nav class="site-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li><a href="./cyprus.html">Destinations</a></li>
+          <li><a href="./profile.html" class="active">User Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <h1 class="text-center">User Profile</h1>
+      <p class="text-center margin-bottom">
+        View and edit your information here.
+      </p>
+
+      <div class="profile-info">
+        <div class="avatar-container text-center">
+          <div class="avatar margin-bottom-sm">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h2>Example Name</h2>
+          <p class="text-muted">Beginner Traveler</p>
+        </div>
+
+        <form method="POST" class="fields">
+          <div class="fieldset">
+            <label for="fname">Full Name:</label>
+            <input
+              class="form-input"
+              id="fname"
+              name="full_name"
+              type="text"
+              placeholder="Example Name"
+            />
+          </div>
+          <div class="fieldset">
+            <label for="email">Email Address:</label>
+            <input
+              class="form-input"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="some@email.com"
+              value="some@email.com"
+            />
+          </div>
+
+          <div class="fieldset">
+            <label for="country">Country:</label>
+            <select name="country" id="country" class="form-input">
+              <option value="lb">Lebanon</option>
+              <option value="us">United States</option>
+            </select>
+          </div>
+
+          <div class="fieldset">
+            <p>Travel expertise:</p>
+            <div class="radio-container">
+              <div>
+                <input type="radio" id="beginner" name="expertise" checked />
+                <label for="beginner">Beginner</label>
+              </div>
+
+              <div>
+                <input type="radio" id="intermediate" name="expertise" />
+                <label for="intermediate">Intermediate</label>
+              </div>
+
+              <div>
+                <input type="radio" id="expert" name="expertise" />
+                <label for="expert">Expert</label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-button" disabled>
+            Save<i class="fa-solid fa-floppy-disk"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <p>
+        &copy; 2024 - Travel Destination Guide
+        <br />
+        <span class="text-muted text-small"
+          >Photos from
+          <a
+            href="https://unsplash.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-light"
+            >Unsplash</a
+          ></span
+        >
+      </p>
+    </footer>
+  </body>
+</html>
