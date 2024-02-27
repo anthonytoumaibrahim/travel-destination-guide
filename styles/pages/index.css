@@ -14,6 +14,7 @@
   color: #ffffff;
   font-size: 64px;
   text-shadow: 0 6px 12px var(--shadow-heavy-color);
+  text-align: center;
 }
 .hero .divider {
   fill: #ffffff;
@@ -51,7 +52,7 @@
   font-weight: bold;
 }
 .destination-card img {
-  min-width: 360px;
+  width: 100%;
   height: 240px;
   aspect-ratio: auto;
   object-fit: cover;
@@ -93,4 +94,15 @@
 }
 .card-button i {
   margin-left: 8px;
+}
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .destinations {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .destination-card {
+    width: 100%;
+    margin: 0 40px;
+  }
 }
