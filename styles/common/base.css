@@ -47,6 +47,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+p {
+  line-height: 26px;
+}
 .site-header {
   background-color: var(--light-color);
   display: flex;
@@ -80,4 +83,12 @@ a:hover {
   position: absolute;
   left: 50%;
   translate: -50% 4px;
+}
+.site-footer {
+  margin-top: var(--margin-lg) !important;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  padding: 20px;
+  text-align: center;
 }
