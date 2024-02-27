@@ -65,7 +65,11 @@
   height: 340px;
 }
 .destination-card:hover {
-  opacity: .85;
+  opacity: 0.85;
+}
+.destination-card:hover .card-button,
+.destination-card:hover .popular-ribbon {
+  background-color: var(--secondary-color);
 }
 .destination-card-content {
   padding: 15px;
@@ -96,7 +100,7 @@
   margin-left: 8px;
 }
 /* Mobile optimization */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .destinations {
     justify-content: center;
     flex-wrap: wrap;
