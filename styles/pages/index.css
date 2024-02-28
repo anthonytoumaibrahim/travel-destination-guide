@@ -77,7 +77,7 @@
 .destination-card:hover {
   opacity: 0.85;
 }
-.destination-card:hover .card-button,
+.destination-card:hover .button,
 .destination-card:hover .popular-ribbon {
   background-color: var(--secondary-color);
 }
@@ -94,19 +94,7 @@
   margin-top: 4px;
   color: var(--muted-color);
 }
-.card-button {
-  border: none;
-  background-color: var(--primary-color);
-  margin-top: var(--margin-sm);
-  padding: 15px 30px;
-  color: #ffffff;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: inherit;
-}
-.card-button i {
+.button i {
   margin-left: 8px;
 }
 .newsletter-section {
@@ -115,11 +103,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   padding: 120px 0;
 }
 .newsletter-container {
   background: linear-gradient(0deg, var(--light-color) 0%, #ffffff 100%);
-  box-shadow: 0 6px 24px var(--shadow-color);
+  box-shadow: 0 0 44px var(--shadow-color);
   max-width: 70%;
   margin: auto;
   border-radius: var(--radius-xs);
@@ -144,21 +133,7 @@
   font-size: 32px;
 }
 .form-input {
-  width: 100%;
-  border: 1px solid var(--light-alt-color);
-  padding: 20px;
-  font-family: inherit;
   border-radius: var(--radius-sm) 0 0 var(--radius-sm);
-  outline: none;
-  font-size: 20px;
-  background-color: #ffffff;
-}
-.form-input:hover,
-.form-input:focus {
-  border-color: var(--primary-color);
-}
-.form-input:focus {
-  background-color: var(--light-color);
 }
 .fieldset {
   display: flex;
