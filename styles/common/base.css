@@ -65,9 +65,11 @@ p {
   gap: 20px;
   align-items: center;
 }
+.site-nav ul li {
+  position: relative;
+}
 .site-nav ul li a {
   color: #000000;
-  position: relative;
 }
 .site-nav ul li a.active,
 .site-nav ul li a:hover {

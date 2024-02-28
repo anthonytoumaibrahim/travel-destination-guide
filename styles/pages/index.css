@@ -28,7 +28,7 @@
 }
 .hero .scroll-indicator {
   color: #ffffff;
-  opacity: .85;
+  opacity: 0.85;
   translate: 0 200px;
 }
 .hero .scroll-indicator i {
@@ -111,6 +111,12 @@
 }
 /* Mobile optimization */
 @media (max-width: 1024px) {
+  .hero .divider {
+    height: 60px;
+  }
+  .hero .scroll-indicator {
+    translate: 0 160px;
+  }
   .destinations {
     justify-content: center;
     flex-wrap: wrap;

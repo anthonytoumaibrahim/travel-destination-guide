@@ -31,7 +31,7 @@
 .cities {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   margin: 0 20px;
 }
 .cities .city {
@@ -68,4 +68,12 @@
 }
 .card-button i {
   margin-left: 8px;
+}
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .cities .city,
+  .cities .city.city-inverse {
+    flex-direction: column;
+    text-align: center;
+  }
 }

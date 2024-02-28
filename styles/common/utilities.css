@@ -20,6 +20,10 @@
 .font-bold {
   font-weight: bold;
 }
+.margin-x {
+  margin-left: var(--margin-sm);
+  margin-right: var(--margin-sm);
+}
 .margin-bottom {
   margin-bottom: var(--margin);
 }
