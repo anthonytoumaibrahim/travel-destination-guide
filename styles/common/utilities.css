@@ -35,3 +35,6 @@
 .rounded-bottom {
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
+.capitalize {
+  text-transform: capitalize;
+}
