@@ -84,6 +84,10 @@ p {
   left: 50%;
   translate: -50% 4px;
 }
+.menu-button-mobile {
+  display: none;
+  font-size: 24px;
+}
 .site-footer {
   margin-top: var(--margin-lg) !important;
   background-color: #000000;
@@ -91,4 +95,13 @@ p {
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   padding: 20px;
   text-align: center;
+}
+/* Mobile optimization */
+@media (max-width: 1024px) {
+  .site-nav {
+    display: none;
+  }
+  .menu-button-mobile {
+    display: block;
+  }
 }

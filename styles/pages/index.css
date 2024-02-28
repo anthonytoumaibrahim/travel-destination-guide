@@ -24,6 +24,7 @@
   left: 0;
   width: 125%;
   height: 110px;
+  translate: 0 1.5px;
 }
 
 .destinations {
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  margin: 0 20px;
 }
 .destination-card {
   display: block;
