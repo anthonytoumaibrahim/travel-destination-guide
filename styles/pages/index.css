@@ -13,7 +13,7 @@
 .hero h1 {
   color: #ffffff;
   font-size: 64px;
-  text-shadow: 0 6px 12px var(--shadow-heavy-color);
+  text-shadow: 0 0 24px var(--shadow-heavy-color);
   text-align: center;
 }
 .hero .divider {
@@ -38,11 +38,13 @@
 .destinations {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
   margin: 0 20px;
 }
 .destination-card {
+  background-color: var(--light-color);
   display: block;
   width: 360px;
   border-radius: var(--radius-sm);
@@ -50,6 +52,13 @@
   border: 1px solid var(--light-alt-color);
   text-decoration: none !important;
   position: relative;
+  transition: scale 0.25s ease-in-out;
+}
+.destination-card:hover {
+  background-color: var(--light-secondary-color);
+  opacity: 0.85;
+  scale: 1.05;
+  box-shadow: 0 8px 32px var(--shadow-color);
 }
 .popular-ribbon {
   position: absolute;
@@ -77,10 +86,19 @@
   width: 100%;
   height: 340px;
 }
-.destination-card:hover {
-  opacity: 0.85;
+.destination-card .button {
+  background-color: transparent;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 14px;
 }
-.destination-card:hover .button,
+.destination-card .button:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+.destination-card:hover .button {
+  color: var(--secondary-color);
+}
 .destination-card:hover .popular-ribbon {
   background-color: var(--secondary-color);
 }
@@ -171,7 +189,7 @@
   border-radius: 0;
 }
 /* Mobile optimization */
-@media (max-width: 1024px) {
+@media (max-width: 1196px) {
   .hero .divider {
     height: 60px;
   }
@@ -180,11 +198,12 @@
   }
   .destinations {
     justify-content: center;
-    flex-wrap: wrap;
   }
-  .destination-card {
-    width: 100%;
-    margin: 0 40px;
+  .destination-card-popular {
+    flex-grow: 0;
+  }
+  .destination-card-popular img {
+    height: 240px;
   }
   .newsletter-container {
     width: auto;
@@ -192,6 +211,10 @@
   }
 }
 @media (max-width: 768px) {
+  .destination-card {
+    width: 100%;
+    margin: 0 40px;
+  }
   .newsletter-container {
     flex-direction: column;
     padding: 0 0 40px 0;
