@@ -24,30 +24,32 @@
     <link rel="stylesheet" href="./styles/pages/index.css" />
   </head>
   <body>
-    <header class="site-header container">
-      <h2>Travel Destination Guide</h2>
-      <i class="fa-solid fa-bars menu-button-mobile"></i>
-      <nav class="site-nav">
-        <ul>
-          <li>
-            <a href="./index.html" class="active">Home</a>
-          </li>
-          <li><a href="./pages/cyprus.html">Destinations</a></li>
-          <li>
-            <a href="./pages/profile.html" class="profile-link"
-              ><i class="fa-regular fa-circle-user"></i
-              ><span>Example Name</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <h2>Travel Destination Guide</h2>
+        <i class="fa-solid fa-bars menu-button-mobile"></i>
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="./index.html" class="active">Home</a>
+            </li>
+            <li><a href="./pages/cyprus.html">Destinations</a></li>
+            <li>
+              <a href="./pages/profile.html" class="profile-link"
+                ><i class="fa-regular fa-circle-user"></i
+                ><span>Example Name</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section class="container margin-bottom-lg">
+    <section class="margin-bottom-lg">
       <!-- Hero -->
       <div class="hero margin-bottom-lg">
         <div class="text-center margin-x">
-          <h1 class="margin-bottom-sm">Plan your next trip</h1>
+          <h1 class="margin-bottom">Plan your next trip</h1>
           <h3 class="text-light capitalize">
             Check out the most popular destinations in 2024
           </h3>
@@ -72,72 +74,77 @@
       </div>
 
       <!-- Destinations -->
-      <h1 class="text-center margin-bottom" id="destinations">
-        Popular Destinations
-      </h1>
-      <section class="destinations">
-        <div class="destination-card">
-          <img src="./images/destinations/dubai.jpg" alt="Dubai, UAE" />
-          <div class="destination-card-content">
-            <h2>Dubai<span>UAE</span></h2>
-            <button class="button">
-              Discover UAE<i class="fa-solid fa-arrow-right"></i>
-            </button>
+      <div class="container">
+        <h1 class="text-center margin-bottom" id="destinations">
+          Popular Destinations
+        </h1>
+        <section class="destinations">
+          <div class="destination-card">
+            <img src="./images/destinations/dubai.jpg" alt="Dubai, UAE" />
+            <div class="destination-card-content">
+              <h2>Dubai<span>UAE</span></h2>
+              <button class="button">
+                Discover UAE<i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
-        </div>
-
-        <a
-          href="./pages/cyprus.html"
-          class="destination-card destination-card-popular"
-        >
-          <img src="./images/destinations/larnaca.jpg" alt="Larnaca, Cyprus" />
-          <span class="popular-ribbon">Most Popular</span>
-          <div class="destination-card-content">
-            <h2>Paphos<span>Cyprus</span></h2>
-            <button class="button">
-              Discover Cyprus<i class="fa-solid fa-arrow-right"></i>
-            </button>
+          <a
+            href="./pages/cyprus.html"
+            class="destination-card destination-card-popular"
+          >
+            <img
+              src="./images/destinations/larnaca.jpg"
+              alt="Larnaca, Cyprus"
+            />
+            <span class="popular-ribbon">Most Popular</span>
+            <div class="destination-card-content">
+              <h2>Paphos<span>Cyprus</span></h2>
+              <button class="button">
+                Discover Cyprus<i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </a>
+          <div class="destination-card">
+            <img
+              src="./images/destinations/istanbul.jpg"
+              alt="Istanbul, Türkiye"
+            />
+            <div class="destination-card-content">
+              <h2>Istanbul<span>Türkiye</span></h2>
+              <button class="button">
+                Discover Türkiye<i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
-        </a>
-
-        <div class="destination-card">
-          <img
-            src="./images/destinations/istanbul.jpg"
-            alt="Istanbul, Türkiye"
-          />
-          <div class="destination-card-content">
-            <h2>Istanbul<span>Türkiye</span></h2>
-            <button class="button">
-              Discover Türkiye<i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </section>
 
-    <section class="container newsletter-section">
-      <div class="newsletter-container text-center">
-        <img src="./images/newsletter.jpg" alt="Flight Image" />
-        <div class="newsletter-form">
-          <h1 class="margin-bottom-sm">
-            Get the best deal on your next flight
-          </h1>
-          <p class="margin-bottom-sm">
-            Enter your email address to receive our weekly newsletter.
-          </p>
-          <div class="fieldset">
-            <input
-              type="email"
-              class="form-input"
-              placeholder="your@email.com"
-            />
-            <button class="button">Subscribe</button>
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-container text-center">
+          <img src="./images/newsletter.jpg" alt="Flight Image" />
+          <div class="newsletter-form">
+            <h1 class="margin-bottom-sm">
+              Get the best deal on your next flight
+            </h1>
+            <p class="margin-bottom-sm">
+              Enter your email address to receive our weekly newsletter.
+            </p>
+            <div class="fieldset">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="your@email.com"
+              />
+              <button class="button">Subscribe</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer container">
+    <footer class="site-footer">
       <p>
         &copy; 2024 - Travel Destination Guide
         <br />

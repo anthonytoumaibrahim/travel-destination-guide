@@ -54,10 +54,13 @@ p {
 }
 .site-header {
   background-color: var(--light-color);
+  padding: 25px;
+}
+.site-header .container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px;
 }
 .site-nav ul {
   list-style-type: none;
@@ -133,7 +136,6 @@ p {
   margin-top: var(--margin-lg) !important;
   background-color: #000000;
   color: #ffffff;
-  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   padding: 20px;
   text-align: center;
 }
