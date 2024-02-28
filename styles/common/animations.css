@@ -15,3 +15,18 @@
   animation: fadeInUp;
   animation-duration: 1.25s;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn;
+  animation-duration: 1.75s;
+}

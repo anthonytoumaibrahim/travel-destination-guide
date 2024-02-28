@@ -121,17 +121,21 @@ p {
   border-right: 5px solid transparent;
   border-bottom: 5px solid #000000;
 }
-.site-nav ul li a:not(.profile-link).active::after,
-.site-nav ul li a:not(.profile-link):hover::after {
+.site-nav ul li a:not(.profile-link)::after {
   content: "";
   display: block;
-  width: 18px;
+  width: 0;
   height: 6px;
   background-color: var(--primary-color);
   border-radius: 6px;
   position: absolute;
   left: 50%;
   translate: -50% 4px;
+  transition: width 0.25s;
+}
+.site-nav ul li a:not(.profile-link).active::after,
+.site-nav ul li a:not(.profile-link):hover::after {
+  width: 18px;
 }
 .menu-button-mobile {
   display: none;
