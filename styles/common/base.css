@@ -58,6 +58,9 @@ p {
   background-color: var(--light-color);
   padding: 25px;
 }
+.site-header .logo {
+  width: 200px;
+}
 .site-header .container {
   width: 100%;
   display: flex;
@@ -139,7 +142,39 @@ p {
   background-color: #000000;
   color: #ffffff;
   padding: 20px;
-  text-align: center;
+}
+.site-footer .logo {
+  width: 200px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+}
+.social-media-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.social-media-container a {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none !important;
+}
+/* https://brandcolors.net/ */
+.social-media-container a.sm-icon-fb:hover {
+  color: #1877f2;
+}
+.social-media-container a.sm-icon-ig:hover {
+  color: #e1306c;
+}
+.social-media-container a.sm-icon-tw:hover {
+  color: #1da1f2;
+}
+.social-media-container a.sm-icon-rd:hover {
+  color: #ff4500;
 }
 .form-input {
   width: 100%;

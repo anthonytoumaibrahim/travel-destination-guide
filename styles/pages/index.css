@@ -189,7 +189,7 @@
   border-radius: 0;
 }
 /* Mobile optimization */
-@media (max-width: 1196px) {
+@media (max-width: 1260px) {
   .hero .divider {
     height: 60px;
   }
